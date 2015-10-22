@@ -58,7 +58,7 @@ for i in "$@"
 		    	echo 0 > /sys/class/gpio/gpio2/value
 		    	exit
 		    ;;
-#
+
 		    --cucina)
 		    	echo 1 > /sys/class/gpio/gpio3/value
 		    	sleep 0.5
@@ -94,7 +94,7 @@ for i in "$@"
 		    	exit
 		    ;;
 		    
-		    --tutteluci) #Da configurare ancora
+		    --tutteluci)
 		    	echo 1 > /sys/class/gpio/gpio8/value
 		    	sleep 0.5
 		    	echo 0 > /sys/class/gpio/gpio8/value
