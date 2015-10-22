@@ -18,7 +18,6 @@ echo 13 > /sys/class/gpio/export
 echo 14 > /sys/class/gpio/export
 echo 15 > /sys/class/gpio/export
 echo 16 > /sys/class/gpio/export
-echo 17 > /sys/class/gpio/export
 
 
 #Out/In
@@ -38,7 +37,6 @@ echo out > /sys/class/gpio/gpio13/direction
 echo out > /sys/class/gpio/gpio14/direction
 echo out > /sys/class/gpio/gpio15/direction
 echo out > /sys/class/gpio/gpio16/direction
-echo out > /sys/class/gpio/gpio17/direction
 
 
 #Root 
