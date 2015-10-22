@@ -50,15 +50,117 @@ fi
 
 
 #Lettura argomenti
+
 for i in "$@"
 	do
 		case $i in
-		    --ciao)
-		    	echo "ciao"
+		    --salotto)
+		    	echo 1 > /sys/class/gpio/gpio2/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio2/value
+		    	exit
 		    ;;
-		    --ciao2)
-		    	echo "ciao ciao"
+#
+		    --cucina)
+		    	echo 1 > /sys/class/gpio/gpio3/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio3/value
+		    	exit
 		    ;;
+
+		    --bagno)
+		    	echo 1 > /sys/class/gpio/gpio4/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio4/value
+		    	exit
+		    ;;
+		    
+		    --matrimoniale)
+		    	echo 1 > /sys/class/gpio/gpio5/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio5/value
+		    	exit
+		    ;;
+		    
+		    --letto)
+		    	echo 1 > /sys/class/gpio/gpio6/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio6/value
+		    	exit
+		    ;;
+		    
+		    --tv)
+		    	echo 1 > /sys/class/gpio/gpio7/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio7/value
+		    	exit
+		    ;;
+		    
+		    --tutteluci) #Da configurare ancora
+		    	echo 1 > /sys/class/gpio/gpio8/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio8/value
+		    	exit
+		    ;;
+		    
+		    --luceesterne)
+		    	echo 1 > /sys/class/gpio/gpio9/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio9/value
+		    	exit
+		    ;;
+		    
+		    --tapparellaon1)
+		    	echo 1 > /sys/class/gpio/gpio10/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio10/value
+		    	exit
+		    ;;
+		    
+		    --tapparellaoff1)
+		    	echo 1 > /sys/class/gpio/gpio11/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio11/value
+		    	exit
+		    ;;
+		    
+		    --tapparellaon2)
+		    	echo 1 > /sys/class/gpio/gpio12/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio12/value
+		    	exit
+		    ;;
+		    
+		    --tapparellaoff2)
+		    	echo 1 > /sys/class/gpio/gpio13/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio13/value
+		    	exit
+		    ;;
+		    
+		    --tapparellegeneraleon)
+		    	echo 1 > /sys/class/gpio/gpio14/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio14/value
+		    	exit
+		    ;;
+
+		    --tapparellegeneraleoff)
+		    	echo 1 > /sys/class/gpio/gpio15/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio15/value
+		    	exit
+		    ;;
+		    
+		    
+		    
+		    --allarme)
+		    	echo 1 > /sys/class/gpio/gpio16/value
+		    	sleep 0.5
+		    	echo 0 > /sys/class/gpio/gpio16/value
+		    	exit
+		    ;;
+		    
 		    
 		    *)
 		       echo "default"
